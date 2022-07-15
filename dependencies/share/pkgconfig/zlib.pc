@@ -1,0 +1,13 @@
+prefix=C:/Users/hongpengpei/source/mitsuba/dependencies
+exec_prefix=C:/Users/hongpengpei/source/mitsuba/dependencies
+libdir=C:/Users/hongpengpei/source/mitsuba/dependencies/lib
+sharedlibdir=C:/Users/hongpengpei/source/mitsuba/dependencies/lib
+includedir=C:/Users/hongpengpei/source/mitsuba/dependencies/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.12
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

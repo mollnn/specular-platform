@@ -1,0 +1,11 @@
+prefix=C:/Users/hongpengpei/source/mitsuba/dependencies
+exec_prefix=C:/Users/hongpengpei/source/mitsuba/dependencies
+libdir=C:/Users/hongpengpei/source/mitsuba/dependencies/lib
+includedir=C:/Users/hongpengpei/source/mitsuba/dependencies/include
+
+Name: Xerces-C++
+Description: Validating XML parser library for C++
+Version: 4.0.0
+Libs: -LC:/Users/hongpengpei/source/mitsuba/dependencies/lib -lxerces-c
+Libs.private: 
+Cflags: -IC:/Users/hongpengpei/source/mitsuba/dependencies/include
