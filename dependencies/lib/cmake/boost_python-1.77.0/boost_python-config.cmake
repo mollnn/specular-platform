@@ -2,6 +2,6 @@
 
 include(CMakeFindDependencyMacro)
 
-find_dependency(boost_python39 1.77.0 EXACT)
+find_dependency(boost_python38 1.77.0 EXACT)
 
 include("${CMAKE_CURRENT_LIST_DIR}/boost_python-targets.cmake")

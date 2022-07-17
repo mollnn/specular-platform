@@ -12,8 +12,8 @@ set_target_properties(Boost::stacktrace_windbg PROPERTIES
   IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/bin/boost_stacktrace_windbg-vc142-mt-x64-1_77.dll"
   )
 
-list(APPEND _IMPORT_CHECK_TARGETS Boost::stacktrace_windbg )
-list(APPEND _IMPORT_CHECK_FILES_FOR_Boost::stacktrace_windbg "${_IMPORT_PREFIX}/lib/boost_stacktrace_windbg-vc142-mt-x64-1_77.lib" "${_IMPORT_PREFIX}/bin/boost_stacktrace_windbg-vc142-mt-x64-1_77.dll" )
+list(APPEND _cmake_import_check_targets Boost::stacktrace_windbg )
+list(APPEND _cmake_import_check_files_for_Boost::stacktrace_windbg "${_IMPORT_PREFIX}/lib/boost_stacktrace_windbg-vc142-mt-x64-1_77.lib" "${_IMPORT_PREFIX}/bin/boost_stacktrace_windbg-vc142-mt-x64-1_77.dll" )
 
 # Commands beyond this point should not need to know the version.
 set(CMAKE_IMPORT_FILE_VERSION)

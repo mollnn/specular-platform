@@ -20,6 +20,8 @@ find_dependency(boost_throw_exception 1.77.0 EXACT)
 find_dependency(boost_type_traits 1.77.0 EXACT)
 find_dependency(boost_utility 1.77.0 EXACT)
 find_dependency(ZLIB)
+find_dependency(BZip2)
+find_dependency(LibLZMA)
 find_dependency(boost_numeric_conversion 1.77.0 EXACT)
 
 include("${CMAKE_CURRENT_LIST_DIR}/boost_iostreams-targets.cmake")

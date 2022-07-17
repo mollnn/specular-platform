@@ -12,8 +12,8 @@ set_target_properties(Boost::stacktrace_noop PROPERTIES
   IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/bin/boost_stacktrace_noop-vc142-mt-x64-1_77.dll"
   )
 
-list(APPEND _IMPORT_CHECK_TARGETS Boost::stacktrace_noop )
-list(APPEND _IMPORT_CHECK_FILES_FOR_Boost::stacktrace_noop "${_IMPORT_PREFIX}/lib/boost_stacktrace_noop-vc142-mt-x64-1_77.lib" "${_IMPORT_PREFIX}/bin/boost_stacktrace_noop-vc142-mt-x64-1_77.dll" )
+list(APPEND _cmake_import_check_targets Boost::stacktrace_noop )
+list(APPEND _cmake_import_check_files_for_Boost::stacktrace_noop "${_IMPORT_PREFIX}/lib/boost_stacktrace_noop-vc142-mt-x64-1_77.lib" "${_IMPORT_PREFIX}/bin/boost_stacktrace_noop-vc142-mt-x64-1_77.dll" )
 
 # Commands beyond this point should not need to know the version.
 set(CMAKE_IMPORT_FILE_VERSION)

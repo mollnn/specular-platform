@@ -12,8 +12,8 @@ set_target_properties(Boost::unit_test_framework PROPERTIES
   IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/bin/boost_unit_test_framework-vc142-mt-gd-x64-1_77.dll"
   )
 
-list(APPEND _IMPORT_CHECK_TARGETS Boost::unit_test_framework )
-list(APPEND _IMPORT_CHECK_FILES_FOR_Boost::unit_test_framework "${_IMPORT_PREFIX}/lib/boost_unit_test_framework-vc142-mt-gd-x64-1_77.lib" "${_IMPORT_PREFIX}/bin/boost_unit_test_framework-vc142-mt-gd-x64-1_77.dll" )
+list(APPEND _cmake_import_check_targets Boost::unit_test_framework )
+list(APPEND _cmake_import_check_files_for_Boost::unit_test_framework "${_IMPORT_PREFIX}/lib/boost_unit_test_framework-vc142-mt-gd-x64-1_77.lib" "${_IMPORT_PREFIX}/bin/boost_unit_test_framework-vc142-mt-gd-x64-1_77.dll" )
 
 # Commands beyond this point should not need to know the version.
 set(CMAKE_IMPORT_FILE_VERSION)

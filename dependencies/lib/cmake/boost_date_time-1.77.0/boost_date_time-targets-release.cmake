@@ -12,8 +12,8 @@ set_target_properties(Boost::date_time PROPERTIES
   IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/bin/boost_date_time-vc142-mt-x64-1_77.dll"
   )
 
-list(APPEND _IMPORT_CHECK_TARGETS Boost::date_time )
-list(APPEND _IMPORT_CHECK_FILES_FOR_Boost::date_time "${_IMPORT_PREFIX}/lib/boost_date_time-vc142-mt-x64-1_77.lib" "${_IMPORT_PREFIX}/bin/boost_date_time-vc142-mt-x64-1_77.dll" )
+list(APPEND _cmake_import_check_targets Boost::date_time )
+list(APPEND _cmake_import_check_files_for_Boost::date_time "${_IMPORT_PREFIX}/lib/boost_date_time-vc142-mt-x64-1_77.lib" "${_IMPORT_PREFIX}/bin/boost_date_time-vc142-mt-x64-1_77.dll" )
 
 # Commands beyond this point should not need to know the version.
 set(CMAKE_IMPORT_FILE_VERSION)

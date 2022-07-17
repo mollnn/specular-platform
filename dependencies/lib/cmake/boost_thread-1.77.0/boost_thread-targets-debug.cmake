@@ -12,8 +12,8 @@ set_target_properties(Boost::thread PROPERTIES
   IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/bin/boost_thread-vc142-mt-gd-x64-1_77.dll"
   )
 
-list(APPEND _IMPORT_CHECK_TARGETS Boost::thread )
-list(APPEND _IMPORT_CHECK_FILES_FOR_Boost::thread "${_IMPORT_PREFIX}/lib/boost_thread-vc142-mt-gd-x64-1_77.lib" "${_IMPORT_PREFIX}/bin/boost_thread-vc142-mt-gd-x64-1_77.dll" )
+list(APPEND _cmake_import_check_targets Boost::thread )
+list(APPEND _cmake_import_check_files_for_Boost::thread "${_IMPORT_PREFIX}/lib/boost_thread-vc142-mt-gd-x64-1_77.lib" "${_IMPORT_PREFIX}/bin/boost_thread-vc142-mt-gd-x64-1_77.dll" )
 
 # Commands beyond this point should not need to know the version.
 set(CMAKE_IMPORT_FILE_VERSION)

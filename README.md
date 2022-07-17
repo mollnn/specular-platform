@@ -1,14 +1,13 @@
 Mitsuba Fork for CMake
 ===================================
 
-This fork is modified for CMake/Scons compilation, dependencies are updated to lastest(?) version.(Only Windows platform supported)
+Download and unzip dependencies.zip if you need.
 
-## Modifications
- - Scons Compilation & Python 3 support ([#ca4f9999](https://github.com/VicentChen/mitsuba/commit/ca4f99998dc15e56b042192b5ce2df746dba7214)).Python files: These are modified for Python3 gramma and SCons compilation.
- - **CMake support**([#359d4644](https://github.com/VicentChen/mitsuba/commit/359d4644cdfc926bbb0d2a54a0813bab3826e9da)).
- - Dependencies update ([#3d6ecee8](https://github.com/VicentChen/mitsuba/commit/3d6ecee82bb29112c13658a9ee9eb06ceb500341)). Dependencies and some source files are updated to latest version.
- - C++17([#ee38bdba](https://github.com/VicentChen/mitsuba/commit/ee38bdba421548bca706d843a53956714f242763)): To compile under c++17, `std::binary_function` and `std::unary_function` are changed to `std::function`.
- - `doc/compiling.tex`: Use `\begin{code}` and `\end{code}` in line 333 and 337 , otherwise cannot compile.
+
+
+===================================
+
+This fork is modified for CMake/Scons compilation, dependencies are updated to lastest(?) version.(Only Windows platform supported)
 
 ## Usage
 
@@ -44,19 +43,6 @@ You can compile with CMake GUI or command line.
 3. Config and generate project in GUI. (or go to `cbuild` folder and execute `cmake ..` in command line)
 4. Open Visual Studio Solution `Mitsuba.sln`, compile entire solution.
 5. You can run/debug mitsuba as normal VS project now.
-
-#### SCons Compilation
-When using SCons compilation, you need to specify which library to link in `config.py`.
-
-1. Go back to project root directory: `cd ..`
-2. Modify `build/config-win64-msvc2019.py`, `build/config-win64-msvc2019-debug.py`:
-	- Check `PYTHON39LIB`, modify to `Your_Python_Installation_Path/libs/Your_Python_Version`
-	- Check `PYTHON39INCLUDE`, modify to `Your_Python_Installation_Path/include`.
-	- Check `QTINCLUDE`: modify to `Your_Qt_Installation_Path/Your_MSVC_version/include`
-	- Check `QTDIR`: modify to `Your_Qt_Installation_Path/Your_MSVC_version/`.
-3. Copy config file`build/config-win64-msvc2019.py` as `config.py`: `cp build/config-win64-msvc2019.py config.py`
-4. Run `scons` under project root directory.
-5. Executable program are distributed in `dist/`
 
 ## Dependencies list
 

@@ -13,8 +13,8 @@ set_target_properties(Boost::fiber_numa PROPERTIES
   IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/bin/boost_fiber_numa-vc142-mt-gd-x64-1_77.dll"
   )
 
-list(APPEND _IMPORT_CHECK_TARGETS Boost::fiber_numa )
-list(APPEND _IMPORT_CHECK_FILES_FOR_Boost::fiber_numa "${_IMPORT_PREFIX}/lib/boost_fiber_numa-vc142-mt-gd-x64-1_77.lib" "${_IMPORT_PREFIX}/bin/boost_fiber_numa-vc142-mt-gd-x64-1_77.dll" )
+list(APPEND _cmake_import_check_targets Boost::fiber_numa )
+list(APPEND _cmake_import_check_files_for_Boost::fiber_numa "${_IMPORT_PREFIX}/lib/boost_fiber_numa-vc142-mt-gd-x64-1_77.lib" "${_IMPORT_PREFIX}/bin/boost_fiber_numa-vc142-mt-gd-x64-1_77.dll" )
 
 # Commands beyond this point should not need to know the version.
 set(CMAKE_IMPORT_FILE_VERSION)
